@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lange="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Netflix Survey Form</title>
+  </head> 
+  <body>
+    <div class="container">
+    <h1 id="title"> Netflix Survey Form</h1>
+    <p id="description" class="description"> Thank you for taking the time to help us improve the platform </p>
+  <form id="survey-form">
+    <div> 
+      <label id="name-label" for="name" class="bold">Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter Your Name" class="form-control" class="center" required> </input>
+    </div>
+    <div> 
+      <label id="email-label" for="email" class="bold">Email</label>
+      <input type="email" name="email" id="email" placeholder="Enter Your Email" class="form-control" class="center" required></input>
+    </div>
+    <div>
+      <label id="number-label" for ="number" class="bold" class="center">Age</label>
+      <input name="number" id="number" type="number" min="18" max="120" placeholder="Age" class="form-control"></input>
+    </div>
+    <div>
+      <p class="bold" class="form-control">Which of the following best describes your current situation?</p>
+      <select id="dropdown">
+        <option value="">(select one)</option>
+        <option value="1">Student</option>
+        <option value="2">Full Time Job</option>
+        <option value="3">Prefer Not To Say</option>
+        <option value="4">Other</option>
+      </select>
+    </div>  
+    <div> 
+      <p class="bold" class="form-control">How Likely Are You To Reccomend Netflix?</p>
+      <label for="very-likely" id="very-likely-label"><input name="user-reccomend" type="radio" id="very-likely" value="very-likely">Very Likely</input></label>
+      <label for="likely" id="likely-label"> <input name="user-reccomend" type="radio" id="likely" value="likely">Likely</input></label>
+      <label for="not-likely" id="not-likely-label"><input name="user-reccomend" type="radio" id ="not-likely" value="not-likely">Not-Likely</input></label>
+      <label for="unsure" id="unsure-label"> <input name="user-reccomend" type="radio" id="unsure" value="unsure">Unsure </label>
+    </div>
+
+
+    <div> 
+      <p class="bold" class="form-control">Which of the Following Netflix Originals Have You Seen?</p>
+      <label> <input type="checkbox" name="seen" id="Uncut-Gems" class="input-checkbox" value="uncut-gems">Uncut Gems</input></label>
+      <label> <input type="checkbox" name="seen" id="Squid-Games" class="input-checkbox" value="squid-games">Squid Games</input></label> 
+      <label> <input type="checkbox" name="seen" id="The-Witcher" value="the-witcher" class="input-checkbox">The Witcher</input></label>
+      <label> <input type="checkbox" name="seen" id="Cobra-Kai" value="cobra-kai" class="input-checkbox">Cobra Kai</input></label>
+      <label> <input type="checkbox" name="seen" id="Stranger-Things" value="stranger-things" class="input-checkbox">Stranger Things</input></label>
+      <label> <input type="checkbox" name="seen" id="Red-Notice" value="red-notice" class="input-checkbox">Red Notice</input></label>
+      <label> <input type="checkbox" name="seen" id="Arrested-Development" value="arrested-development" class="input-checkbox"></input>Arrested Development</label>
+      <label> <input type="checkbox" name="seen" id="Outer-Banks" value="outer-banks" class="input-checkbox">Outer Banks</input></label>
+      <label> <input type="checkbox" name="seen" id="The-Irishman" value="the-irishman" class="input-checkbox">The Irishman</input></label>
+      <label> <input type="checkbox" name="seen" id="Roma" value="roma" class="input-checkbox">Roma</input></label>
+      <label> <input type="checkbox" name="seen" id="Extraction" value="extraction" class="input-checkbox">Extraction</input></label>
+      <label> <input type="checkbox" name="seen" id="Baki-Hanma" value="baki-hanma" class="input-checkbox">Baki Hanma</input></label>
+      <label> <input type="checkbox" name="seen" id="One-Piece" value="one-piece" class="input-checkbox">One Piece (2023)</input></label>
+    </div>
+    <label><input type="checkbox" name="seen" id="none" value="none">None of the Above</input></label>
+    <div> 
+      <p class="bold">What Would You Like To See More of on Netflix?</p>
+      <label for="comments" id="comments-label"><textarea id="comments" name="comments" rows="5" cols="40" placeholder="Enter your comment here..."></textarea></label>
+    </div>
+    <div> 
+<button type="submit" id="submit" class="submit-button">Submit</button>
+    </div>
+  </form>
+  </div> 
+  </body>
+</html>
